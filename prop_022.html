@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="babyjatt.gif">
+    <link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet">
+    <title>CONFIÉSATE</title>
+
+    
+    <link rel="stylesheet" href="MACHINA/styleone1.css">
+</head> 
+<style>
+    body {
+    padding: 0;
+    font-size: 2rem;
+    align-items: center;
+    margin: 0.5em;
+    white-space: flex;
+    background-color: cyan;
+}
+
+.flex-container {
+    display: inline-block;
+    flex-wrap: wrap;
+  }
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    padding: 0 0 0 0;
+    margin: 0;
+    background-color: aqua;
+}
+
+/*a:hover, a:focus {
+    color: yellow;
+    background: red;
+}
+
+a:active {
+    color: red;
+}*/
+
+h1 {
+    letter-spacing: 2em;
+    font-family: "Meie Script", cursive;
+}
+
+.meie-script-regular {
+    font-family: "Meie Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+marquee {
+    background-color: aqua;
+    font-family: "Meie Script", cursive;
+    padding: 0 0 0 0;
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+
+.bside1 {
+    background-color: rgb(95, 57, 0);
+    color: rgb(255, 170, 207);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.cyan {
+    background-color: peachpuff;
+    font-family: "Meie Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.cyan4 {
+    background-color: gray;
+    color: peachpuff;
+}
+
+.delay1 {
+    width: 50%;
+    background-color: magenta;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.cyan2 {
+    background-color: rgb(0, 255, 128);
+    font-family: "Meie Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    white-space: nowrap;
+}
+
+.cyan5 {
+    background-color: beige;
+    color: skyblue;
+}
+
+.delay2 {
+    background-color: blue;
+    color:rgb(217, 0, 255);
+}
+
+.cyan3 {
+    background-color: brown;
+    color: rgb(217, 0, 255);
+}
+
+.marquee-container {
+    display: flex;
+    white-space: nowrap;
+}
+.marquee-container2 {
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+.marquee-container3 {
+    display: inline-flex;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.marquee-container4 {
+    display: inline-flex;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.marquee-container5 {
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+.marquee-container6 {
+    display: inline-flex;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: lightgray;
+    border-radius: 2rem 2rem 2rem 2rem;
+}
+
+.btn-container {
+    white-space: flex;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: cyan;
+    font-family: inherit;
+    display: inline-block;
+}
+
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    border: #222;
+    background: transparent;
+    z-index:1;
+    display:none;
+}
+
+.popup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background: transparent;
+    width:350px;
+    height: 220px;
+    border:#222;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.popup .close-btn{
+    cursor:pointer;
+    position:absolute;
+    right: 20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background: cyan;
+    color: black;
+    font-size:25px;
+    font-weight:600;
+    text-align:center;
+    border-radius:50%;
+    white-space: flex;
+}
+
+.popup.active .overlay{
+    display:flex;
+}
+
+.popup.active .content{
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+    white-space: flex;
+}
+</style>
+
+<body>
+        <article>
+                
+            
+
+            <div class="marquee-container">
+                <marquee direction="right" width="10%" scrollamount="12"> Bueno, tengo que mencionar a cada rato que era anoréxica porque es de las pocas cosas interesantes sobre mí. </marquee> 
+                <marquee  width="20%" scrollamount="15"> No lo digo porque no quiero que pase. El decir es actuar, aunque no lo creas. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> The more I spin around the more I notice the details in my room. </marquee>
+                <a href="videoforagain.html"> <marquee  width="40%" behavior="scroll" direction="left" scrollamount="15"> The more I notice how gross it is. How many scraps of everything there are. </marquee> </a>
+                <marquee  width="17%" scrollamount="25">EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME.</marquee>
+                <marquee  width="14%" behavior="scroll" direction="right" scrollamount="8"> SAVE ME </marquee>
+                <marquee  width="5%" behavior="scroll" direction="left" scrollamount="10"> No me acuerdo del porqué, fue durante la pandemia. Hacía otras cosas también. Pastillas, a veces. No sabía guiar. </marquee>
+                <marquee width="6%" behavior="scroll" direction="right" scrollamount="50"> SAVE ME </marquee>
+            </div>
+
+            <div class="marquee-container4">
+                <marquee scrollamount="5" width="15%"> Me gusta sentirme incompleta. En continuo movimiento. </marquee>
+                <marquee  width="17%" scrollamount="25">EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME.</marquee>
+                <marquee width="18%" direction="right"> Satiation is, unfortunately, asymptote. </marquee>
+                <marquee  width="16%"> READ IT AND WEEP IT. </marquee>
+             </div>
+
+            <div class="marquee-container4">
+                <marquee  behavior="scroll" scrollamount="15" direction="left" width="8%">Quiero rodar sobre el suelo. Quiero ser una canica. </marquee>
+                <marquee behavior="scroll" direction="right" scrollamount="10" width="10%"> Nunca confesé nada. Lo que pasó hace dos años me molestó porque lo único que él dijo fue...'ahora se jodió esto' </marquee>
+                <marquee  behavior="scroll" direction="left" width="20%" scrollamount="8"> A nadie le gusta la música que escucho. </marquee>
+                <marquee  scrollamount="8" width="14%"> Llenar Espacios Llenar Vacíos, Olvidar el Vacío </marquee>
+                <marquee> <a href="videoforagain.html"> Guárdame </a> </marquee>
+            </div>
+
+        
+            <div class="marquee-container5">
+                
+                <marquee  width="15%" direction="right" scrollamount="10"> Yo ni quería ir, pero fui. Quería ver a mi amigo. El que terminó no yendo. </marquee>
+                <marquee  width="17%"> Me dijo que ella vendía anfetaminas. Era rubia, medio gordita, y tenía los dientes como de conejo. </marquee>
+                <marquee  width="3%" direction="right"> Le tiré una foto. </marquee>
+                <marquee width="16%" direction="right" behavior="scroll"> Le grité porque, pues, no sé. Le salgo con cosas a veces. Yo soy su hija. Ella es mi madre. </marquee>
+                <marquee behavior="scroll" direction="left" width="21%"> Él me pagó todo por una semana. Sentí que me tenía que acostar con él, al menos. Me daba pena. No me atraía. </marquee>
+                <marquee behavior="scroll" direction="left" width="30%">Me dijo veinte veces que me levantara.</marquee>
+            </div>
+            <div class="marquee-container5">
+                
+                <marquee  width="15%"> Como dije, nadie me puede entender. Yo soy así. </marquee>
+                <marquee  width="17%"> I am slow, forgettable, and lopsided. And getting kicked out. </marquee>
+                <marquee  width="18%" direction="right"> The light comes from there. And occasionally from my phone. And from the sun, very far away outside, if you want to look out the window. </marquee>
+                <marquee width="16%" behavior="scroll"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="21%">Everything feels horizontal now.</marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="15" width="30%">Ellos no sabían qué hacer conmigo. Yo menos. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I'm a machine. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> No quiero salir más a nada. Arrancarse el pelo de manera compulsiva. </marquee>
+            </div>
+            <div class="marquee-container5">
+                
+                <marquee  scrollamount="18" width="15%"> Esa muchacha parece que tenía o un tumor cerebral o un TRASTORNO DE PERSONALIDAD brought to you by TIKTOK bien fuerte porque de que si era IDIOTA. </marquee>
+                <marquee  width="17%"> De hecho, a mí me habían dicho que yo tenía BORDERLINE PERSONALITY DISORDER cuando tenía 18 años. The true condition of any 18 year old is really...being 18 years old. </marquee>
+                <marquee  width="10%" direction="right"> NO SOSPECHABA. NO QUERÍA SOSPECHAR. MÁS LE VALE. </marquee>
+                <marquee width="16%" behavior="scroll"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="21%">Everything feels horizontal now.</marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="15" width="30%">Ellos no sabían qué hacer conmigo. Yo menos. </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I'm a machine. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Arrancarse el pelo de manera compulsiva. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. </marquee>
+                <marquee width="17%"> I am slow, forgettable, and lopsided. And getting kicked out. </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="20%" scrollamount="8"> Cuando pesaba 95 libras, hacía yoga. La única pose que puedo hacer ahora es el Child Pose. Búscala, es una pose fácil. </marquee>
+                <marquee scrollamount="8" width="14%"> It's hard to believe anything existed before I knew about it. You can think this way, too. </marquee>
+                <marquee width="30%" scrollamount="10"> NONE OF YOU KNOW ME. </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> <a href="videoforagain.html"> </a> Es cierto que fui mala persona. Pero ya ha pasado demasiado tiempo para disculparme.  </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> No tengo la misma cara que mi papá. No tengo la misma cara que mi papá. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> <a href="videoforagain.html"> La envidio. </a> </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. </marquee>
+                <marquee width="17%"> I am slow, forgettable, and lopsided. And getting kicked out. </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> <a href="videoforagain.html"> You don't know about it like I do. I do. </a> </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> <a href="videoforagain.html"> VEHÍCULA ... SOY </a></marquee>
+                <marquee scrollamount="8" width="14%"> It's hard to believe anything existed before I knew about it. You can think this way, too. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> <a href="videoforagain.html"> Burning bridges </a> </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> <a href="videoforagain.html"> Es cierto que fui mala persona. Pero ya ha pasado demasiado tiempo para disculparme. </a> </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> No tengo la misma cara que mi papá. No tengo la misma cara que mi papá. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. </marquee>
+                <marquee width="17%"> <a href="videoforagain.html"> </a> I am slow, forgettable, and lopsided. And getting kicked out. </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> <a href="videoforagain.html"> </a> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> <a href="videoforagain.html"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </a></marquee>
+                <marquee width="30%" scrollamount="18" direction="top"> Down they go </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I am five machines. With five reocurring diseases. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="11" <a href="videoforagain.html"> Chica mirándose en el espejo, braiding her hair. </a> </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> <a href="videoforagain.html"> Ella habla sin mirarme. </a> </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10" <a href="videoforagain.html"> I </a> </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="10"> No me saludó. Los novios de mis amigas no me saludan.  </marquee> 
+                <marquee  scrollamount="9" width="40%" scrollamount="25"> <a href="videoforagain.html"> A veces me miro en el espejo por más de dos horas. no soy narcisista. </a> </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Nada es sonoro. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="15%" behavior="scroll" direction="left" scrollamount="9"<a href="videoforagain.html"> s </a> </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="10%" scrollamount="10"> Así me veo cuando me está dando un ataque de corazón: =O </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="11"> <a href="videoforagain.html"> Me dan ganas de arrastrar un palo por el suelo y trazar una línea que nadie verá.  </a> </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> <a href="videoforagain.html"> La envidio. </a> </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> A </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> <a href="videoforagain.html"> So many pictures of myself... LOL! </a>  </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> Me dan ganas de arrastrar un palo por el suelo y trazar una línea que nadie verá. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> <a href="videoforagain.html"> Todo tiene sonoridad.  </a> </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> <a href="videoforagain.html">  La envidio. </a> </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> b, those five hundred times i hit send </marquee>
+            </div>
+            <div class="marquee-container5">
+
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="5%" behavior="scroll" direction="left" scrollamount="10"> Quiero que te sientas al frente de tu computadora y mires mis mensajes. </marquee> </a> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="18%" behavior="scroll" direction="left" scrollamount="10"> Quiero que te sientas al frente de tu computadora y mires mis mensajes. </marquee> </a> 
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="5%" behavior="scroll" direction="right" scrollamount="5"> TE TENGO ODIO. </marquee> </a> 
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="5%" behavior="scroll" direction="left" scrollamount="10"> Quiero que te sientas al frente de tu computadora y mires mis mensajes. </marquee> </a> 
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="15%" behavior="scroll" direction="left" scrollamount="10"> SAVE ME HERE </marquee> </a> 
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="5%" behavior="scroll" direction="right" scrollamount="25"> BABY </marquee> </a> 
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I want to be a robot eventually. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair.  </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Somos dos nada más. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> OOOOO </marquee>
+                <marquee  width="30%" behavior="scroll" direction="down" scrollamount="2"> Isabelle </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I want to be a robot eventually. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="15"> No tengo la misma cara que mi papá. No tengo la misma cara que mi papá. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Somos dos nada más. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> OOOOO </marquee>
+                <marquee  width="30%" behavior="scroll" direction="down" scrollamount="2"> I'm very busy. </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I want to be a robot eventually. </marquee> 
+                <marquee  scrollamount="9" direction="down" width="60%" scrollamount="10"> La viré para enseñarle. Me dijo que estaba bien. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Somos dos nada más. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="4%" behavior="scroll" direction="left" scrollamount="10"> Another reason to keep me in your thoughts. </marquee> </a> 
+                <marquee  width="30%" behavior="scroll" direction="down" scrollamount="2"> quedamos en eso </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I want to be a robot eventually. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="5"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Somos dos nada más. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24" <a href="videoforagain.html"> OOOOO </a> </marquee>
+                <marquee  width="30%" behavior="scroll" direction="down" scrollamount="2"> Todo ha sido desastroso.  </marquee>
+            </div>
+
+            <div>
+                <marquee  scrollamount="9" width="60%" scrollamount="5"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Somos dos nada más. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> You couldn't have seen her. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="20"> SOY...! IDIOTA EN LA INTERNET </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Me faltaban como tres dientes en esa foto. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="10"> Me dan ganas de arrastrar un palo por el suelo y trazar una línea que nadie verá. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> b, those five hundred times i hit send </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Me faltaban como tres dientes en esa foto. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> Me dan ganas de arrastrar un palo por el suelo y trazar una línea que nadie verá. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="40%" behavior="scroll" direction="left" scrollamount="5"> Quería morir para que no tuviesen que seguir bregando conmigo. </marquee> </a> 
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Me faltaban como tres dientes en esa foto. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> Siempre voy tarde porque tengo que respirar cuando subo .. espérate.  </marquee> 
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="5%" behavior="scroll" direction="left" scrollamount="8"> GENTE COMÚN </marquee> </a> 
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="2"> En la ventana hay huellas dactilares, como de un niño. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="15"> Me reí cuando me resbalé. No me caí. </marquee>
+            </div>
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Soy mala amiga. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Casi ninguno va en la trenza. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+
+            <!---->
+          
+                <div class="marquee-container5">
+
+                    <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                    <marquee  scrollamount="9" width="50%" scrollamount="11"> No tengo la misma cara que mi papá. No tengo la misma cara que mi papá. No soy mi papá. </marquee> 
+                    <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Soy mala amiga. </marquee>
+                    <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                    <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                    <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                    <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                    <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                    <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. </marquee>
+                    <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                    <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                    <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                    <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                    <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                    <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+                </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> CHICA YA </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <a href="videoforagain.html"> <marquee width="30%" scrollamount="18" direction="down"> Ya me sé todo. </marquee> </a> 
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="right"> Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Me faltaban como tres dientes en esa foto. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> Me dan ganas de arrastrar un palo por el suelo y trazar una línea que nadie verá. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> El Desinterés </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Me faltaban como tres dientes en esa foto. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> Me dan ganas de arrastrar un palo por el suelo y trazar una línea que nadie verá. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Many would say I am a genius.  </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  width="15%" direction="right" scrollamount="10"> I don't want to be friends with my ex. </marquee>
+                <marquee  width="17%"> Me dijo que ella vendía anfetaminas. Era rubia, medio gordita, y tenía los dientes como de conejo. </marquee>
+                <marquee  width="3%" direction="right"> Le tiré una foto. </marquee>
+                <marquee width="16%" direction="right" behavior="scroll"> Le salgo con cosas a veces. Yo soy su hija. Ella es mi madre. Yo seré su madre, ella fue mi hija. </marquee>
+                <marquee behavior="scroll" direction="left" width="21%"> Read me and weep me. </marquee>
+                <marquee behavior="scroll" direction="left" width="30%"> There is no way of knowing. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> Te tengo que pedir que me hagas un favor... </marquee> 
+                <a href="videoforagain.html">  <marquee  width="17%"> Aquí no hay nada. </marquee> </a>
+                <marquee  scrollamount="9" width="60%" scrollamount="5"> It was like a map, I figured. A map that ultimately led to nowhere except my wrist. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Apathy. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> OOOOO </marquee>
+                <marquee  width="30%" behavior="scroll" direction="down" scrollamount="2"> Todo ha sido desastroso.  </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  width="15%" direction="right" scrollamount="10"> There is no distance between us. </marquee>
+                <marquee  width="17%"> Make a face. </marquee>
+                <marquee  width="3%" direction="right"> myFuture to be mine. </marquee>
+                <marquee width="16%" direction="right" behavior="scroll"> Tenemos más en común de lo que piensas. </marquee>
+                <marquee behavior="scroll" direction="left" width="21%"> Give in </marquee>
+                <marquee behavior="scroll" direction="left" width="30%"> There is no way of knowing. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container">
+                <marquee direction="right" width="10%" scrollamount="12"> Bueno, tengo que mencionar a cada rato que era anoréxica porque es de las pocas cosas interesantes sobre mí. </marquee> 
+                <marquee  width="20%" scrollamount="15"> No lo digo porque no quiero que pase. El decir es actuar, aunque no lo creas. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> The more I spin around the more I notice the details in my room. </marquee>
+                <a href="videoforagain.html"> <marquee  width="40%" behavior="scroll" direction="left" scrollamount="15"> The more I notice how gross it is. How many scraps of everything there are. </marquee> </a>
+                <marquee  width="17%" scrollamount="25">EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME.</marquee>
+                <marquee  width="14%" behavior="scroll" direction="right" scrollamount="8"> SAVE ME </marquee>
+                <marquee  width="5%" behavior="scroll" direction="left" scrollamount="10"> No me acuerdo del porqué, fue durante la pandemia. Hacía otras cosas también. Pastillas, a veces. No sabía guiar. </marquee>
+                <marquee width="6%" behavior="scroll" direction="right" scrollamount="50"> SAVE ME </marquee>
+            </div>
+
+            <div class="marquee-container4">
+                <marquee scrollamount="5" width="15%"> Me gusta sentirme incompleta. En continuo movimiento. </marquee>
+                <marquee  width="17%" scrollamount="25">EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME. EVERYTHING IS ABOUT ME.</marquee>
+                <marquee width="18%" direction="right"> Satiation is, unfortunately, asymptote. </marquee>
+                <marquee  width="16%"> READ IT AND WEEP IT. </marquee>
+             </div>
+
+            <div class="marquee-container4">
+                <marquee  behavior="scroll" scrollamount="15" direction="left" width="8%">Quiero rodar sobre el suelo. Quiero ser una canica. </marquee>
+                <marquee behavior="scroll" direction="right" scrollamount="10" width="10%"> Nunca confesé nada. Lo que pasó hace dos años me molestó porque lo único que él dijo fue...'ahora se jodió esto' </marquee>
+                <marquee  behavior="scroll" direction="left" width="20%" scrollamount="8"> A nadie le gusta la música que escucho. </marquee>
+                <marquee  scrollamount="8" width="14%"> Llenar Espacios Llenar Vacíos, Olvidar el Vacío </marquee>
+                <marquee> <a href="videoforagain.html"> Guárdame </a> </marquee>
+            </div>
+
+        
+            <div class="marquee-container5">
+                
+                <marquee  width="15%" direction="right" scrollamount="10"> Yo ni quería ir, pero fui. Quería ver a mi amigo. El que terminó no yendo. </marquee>
+                <marquee  width="17%"> Me dijo que ella vendía anfetaminas. Era rubia, medio gordita, y tenía los dientes como de conejo. </marquee>
+                <marquee  width="3%" direction="right"> Le tiré una foto. </marquee>
+                <marquee width="16%" direction="right" behavior="scroll"> Le grité porque, pues, no sé. Le salgo con cosas a veces. Yo soy su hija. Ella es mi madre. </marquee>
+                <marquee behavior="scroll" direction="left" width="21%"> Él me pagó todo por una semana. Sentí que me tenía que acostar con él, al menos. Me daba pena. No me atraía. </marquee>
+                <marquee behavior="scroll" direction="left" width="30%">Me dijo veinte veces que me levantara.</marquee>
+            </div>
+            <div class="marquee-container5">
+                
+                <marquee  width="15%"> Como dije, nadie me puede entender. Yo soy así. </marquee>
+                <marquee  width="17%"> I am slow, forgettable, and lopsided. And getting kicked out. </marquee>
+                <marquee  width="18%" direction="right"> The light comes from there. And occasionally from my phone. And from the sun, very far away outside, if you want to look out the window. </marquee>
+                <marquee width="16%" behavior="scroll"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="21%">Everything feels horizontal now.</marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="15" width="30%">Ellos no sabían qué hacer conmigo. Yo menos. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I'm a machine. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> No quiero salir más a nada. Arrancarse el pelo de manera compulsiva. </marquee>
+            </div>
+            <div class="marquee-container5">
+                
+                <marquee  scrollamount="18" width="15%"> Esa muchacha parece que tenía o un tumor cerebral o un TRASTORNO DE PERSONALIDAD brought to you by TIKTOK bien fuerte porque de que si era IDIOTA. </marquee>
+                <marquee  width="17%"> De hecho, a mí me habían dicho que yo tenía BORDERLINE PERSONALITY DISORDER cuando tenía 18 años. The true condition of any 18 year old is really...being 18 years old. </marquee>
+                <marquee  width="10%" direction="right"> NO SOSPECHABA. NO QUERÍA SOSPECHAR. MÁS LE VALE. </marquee>
+                <marquee width="16%" behavior="scroll"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="21%">Everything feels horizontal now.</marquee>
+                <marquee behavior="scroll" direction="left" scrollamount="15" width="30%">Ellos no sabían qué hacer conmigo. Yo menos. </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I'm a machine. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Arrancarse el pelo de manera compulsiva. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. </marquee>
+                <marquee width="17%"> I am slow, forgettable, and lopsided. And getting kicked out. </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="20%" scrollamount="8"> Cuando pesaba 95 libras, hacía yoga. La única pose que puedo hacer ahora es el Child Pose. Búscala, es una pose fácil. </marquee>
+                <marquee scrollamount="8" width="14%"> It's hard to believe anything existed before I knew about it. You can think this way, too. </marquee>
+                <marquee width="30%" scrollamount="10"> NONE OF YOU KNOW ME. </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> <a href="videoforagain.html"> </a> Es cierto que fui mala persona. Pero ya ha pasado demasiado tiempo para disculparme.  </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> No tengo la misma cara que mi papá. No tengo la misma cara que mi papá. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> <a href="videoforagain.html"> La envidio. </a> </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. </marquee>
+                <marquee width="17%"> I am slow, forgettable, and lopsided. And getting kicked out. </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> <a href="videoforagain.html"> You don't know about it like I do. I do. </a> </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> <a href="videoforagain.html"> VEHÍCULA ... SOY </a></marquee>
+                <marquee scrollamount="8" width="14%"> It's hard to believe anything existed before I knew about it. You can think this way, too. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> <a href="videoforagain.html"> Burning bridges </a> </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> <a href="videoforagain.html"> Es cierto que fui mala persona. Pero ya ha pasado demasiado tiempo para disculparme. </a> </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> No tengo la misma cara que mi papá. No tengo la misma cara que mi papá. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. </marquee>
+                <marquee width="17%"> <a href="videoforagain.html"> </a> I am slow, forgettable, and lopsided. And getting kicked out. </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> <a href="videoforagain.html"> </a> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> <a href="videoforagain.html"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </a></marquee>
+                <marquee width="30%" scrollamount="18" direction="top"> Down they go </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I am five machines. With five reocurring diseases. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="11" <a href="videoforagain.html"> Chica mirándose en el espejo, braiding her hair. </a> </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> <a href="videoforagain.html"> Ella habla sin mirarme. </a> </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10" <a href="videoforagain.html"> I </a> </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="10"> No me saludó. Los novios de mis amigas no me saludan.  </marquee> 
+                <marquee  scrollamount="9" width="40%" scrollamount="25"> <a href="videoforagain.html"> A veces me miro en el espejo por más de dos horas. no soy narcisista. </a> </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Nada es sonoro. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="15%" behavior="scroll" direction="left" scrollamount="9"<a href="videoforagain.html"> s </a> </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="10%" scrollamount="10"> Así me veo cuando me está dando un ataque de corazón: =O </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="11"> <a href="videoforagain.html"> Me dan ganas de arrastrar un palo por el suelo y trazar una línea que nadie verá.  </a> </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> <a href="videoforagain.html"> La envidio. </a> </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> A </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> <a href="videoforagain.html"> So many pictures of myself... LOL! </a>  </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> Me dan ganas de arrastrar un palo por el suelo y trazar una línea que nadie verá. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> <a href="videoforagain.html"> Todo tiene sonoridad.  </a> </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> <a href="videoforagain.html">  La envidio. </a> </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> b, those five hundred times i hit send </marquee>
+            </div>
+            <div class="marquee-container5">
+
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="5%" behavior="scroll" direction="left" scrollamount="10"> Quiero que te sientas al frente de tu computadora y mires mis mensajes. </marquee> </a> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="18%" behavior="scroll" direction="left" scrollamount="10"> Quiero que te sientas al frente de tu computadora y mires mis mensajes. </marquee> </a> 
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="5%" behavior="scroll" direction="right" scrollamount="5"> TE TENGO ODIO. </marquee> </a> 
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="5%" behavior="scroll" direction="left" scrollamount="10"> Quiero que te sientas al frente de tu computadora y mires mis mensajes. </marquee> </a> 
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="15%" behavior="scroll" direction="left" scrollamount="10"> SAVE ME HERE </marquee> </a> 
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="5%" behavior="scroll" direction="right" scrollamount="25"> BABY </marquee> </a> 
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I want to be a robot eventually. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair.  </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Somos dos nada más. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> OOOOO </marquee>
+                <marquee  width="30%" behavior="scroll" direction="down" scrollamount="2"> Isabelle </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I want to be a robot eventually. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="15"> No tengo la misma cara que mi papá. No tengo la misma cara que mi papá. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Somos dos nada más. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> OOOOO </marquee>
+                <marquee  width="30%" behavior="scroll" direction="down" scrollamount="2"> no </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I want to be a robot eventually. </marquee> 
+                <marquee  scrollamount="9" direction="down" width="60%" scrollamount="10"> La viré para enseñarle. Me dijo que estaba bien. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Somos dos nada más. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="4%" behavior="scroll" direction="left" scrollamount="10"> Another reason to keep me in your thoughts. </marquee> </a> 
+                <marquee  width="30%" behavior="scroll" direction="down" scrollamount="2"> quedamos en eso </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> I want to be a robot eventually. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="5"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Somos dos nada más. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24" <a href="videoforagain.html"> OOOOO </a> </marquee>
+                <marquee  width="30%" behavior="scroll" direction="down" scrollamount="2"> Todo ha sido desastroso.  </marquee>
+            </div>
+
+            <div>
+                <marquee  scrollamount="9" width="60%" scrollamount="5"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Somos dos nada más. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> You couldn't have seen her. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="20"> SOY...! IDIOTA EN LA INTERNET </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Me faltaban como tres dientes en esa foto. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="10"> Me dan ganas de arrastrar un palo por el suelo y trazar una línea que nadie verá. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> b, those five hundred times i hit send </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Me faltaban como tres dientes en esa foto. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> Me dan ganas de arrastrar un palo por el suelo y trazar una línea que nadie verá. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="40%" behavior="scroll" direction="left" scrollamount="5"> Quería morir para que no tuviesen que seguir bregando conmigo. </marquee> </a> 
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Me faltaban como tres dientes en esa foto. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> Siempre voy tarde porque tengo que respirar cuando subo .. espérate.  </marquee> 
+                <a onclick="window.open('videoforagain.html', '_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes');"> <marquee width="5%" behavior="scroll" direction="left" scrollamount="8"> GENTE COMÚN </marquee> </a> 
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="2"> En la ventana hay huellas dactilares, como de un niño. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="15"> Me reí cuando me resbalé. No me caí. </marquee>
+            </div>
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Soy mala amiga. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Casi ninguno va en la trenza. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+
+            <!---->
+          
+                <div class="marquee-container5">
+
+                    <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                    <marquee  scrollamount="9" width="50%" scrollamount="11"> No tengo la misma cara que mi papá. No tengo la misma cara que mi papá. No soy mi papá. </marquee> 
+                    <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Soy mala amiga. </marquee>
+                    <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                    <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                    <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                    <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                    <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                    <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. </marquee>
+                    <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                    <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                    <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                    <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                    <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                    <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+                </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> CHICA YA </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <a href="videoforagain.html"> <marquee width="30%" scrollamount="18" direction="down"> Ya me sé todo. </marquee> </a> 
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="right"> Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Me faltaban como tres dientes en esa foto. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> Me dan ganas de arrastrar un palo por el suelo y trazar una línea que nadie verá. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> El Desinterés </marquee>
+            </div>
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Me faltaban como tres dientes en esa foto. </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> Me dan ganas de arrastrar un palo por el suelo y trazar una línea que nadie verá. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Many would say I am a genius.  </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  width="15%" direction="right" scrollamount="10"> I don't want to be friends with my ex. </marquee>
+                <marquee  width="17%"> Me dijo que ella vendía anfetaminas. Era rubia, medio gordita, y tenía los dientes como de conejo. </marquee>
+                <marquee  width="3%" direction="right"> Le tiré una foto. </marquee>
+                <marquee width="16%" direction="right" behavior="scroll"> Le salgo con cosas a veces. Yo soy su hija. Ella es mi madre. Yo seré su madre, ella fue mi hija. </marquee>
+                <marquee behavior="scroll" direction="left" width="21%"> Read me and weep me. </marquee>
+                <marquee behavior="scroll" direction="left" width="30%"> There is no way of knowing. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="6%" scrollamount="5"> Te tengo que pedir que me hagas un favor... </marquee> 
+                <a href="videoforagain.html">  <marquee  width="17%"> Aquí no hay nada. </marquee> </a>
+                <marquee  scrollamount="9" width="60%" scrollamount="5"> It was like a map, I figured. A map that ultimately led to nowhere except my wrist. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Apathy. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> OOOOO </marquee>
+                <marquee  width="30%" behavior="scroll" direction="down" scrollamount="2"> Todo ha sido desastroso.  </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  width="15%" direction="right" scrollamount="10"> There is no distance between us. </marquee>
+                <marquee  width="17%"> Make a face. </marquee>
+                <marquee  width="3%" direction="right"> myFuture to be mine. </marquee>
+                <marquee width="16%" direction="right" behavior="scroll"> Tenemos más en común de lo que piensas. </marquee>
+                <marquee behavior="scroll" direction="left" width="21%"> Give in </marquee>
+                <marquee behavior="scroll" direction="left" width="30%"> There is no way of knowing. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+
+            <div class="marquee-container5">
+
+                <marquee  direction="right" width="10%" scrollamount="9"> Ella les ruega, dice que quiere que la escuchen, y que la dejen entrar. Pero está cantando sobre algo estúpido. </marquee> 
+                <marquee  scrollamount="9" width="50%" scrollamount="11"> Chica mirándose en el espejo, braiding her hair. </marquee> 
+                <marquee  width="22%" behavior="scroll" direction="right" scrollamount="8"> Todo tiene sonoridad. </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Ella habla sin mirarme. </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> La envidio. </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="10"> Me dijo que estaba bien, que tuviese cuidado, y que hablabamos luego. </marquee>
+                <marquee behavior="scroll" width="15%"> Tengo que llenar todos los espacios que encuentre. Yo trabajo en montones. Ven, para que veas. </marquee>
+                <marquee width="17%"> Genuinamente, ya no importa. Si me quiere hablar, que me escriba.  </marquee>
+                <marquee width="18%" scrollamount="16" direction="right"> Fue mi culpa, yo le mentí. Le dije que a veces me daban ganas de recostar mi cabeza encima de su hombro, pero creo que eso era por ...algún attachment. Y porque me mantenía. Y porque era medio fuerte, aunque bajito. </marquee>
+                <marquee width="16%"> You don't know about it like I do. I do. </marquee>
+                <marquee behavior="scroll" direction="left" width="7%"> It's fine if you feel that way. </marquee>
+                <marquee behavior="scroll" direction="left" width="10%"> No me arrepiento. </marquee>
+                <marquee behavior="scroll" direction="right" width="10%" scrollamount="25"> VEHÍCULA ... SOY</marquee>
+                <marquee scrollamount="8" width="14%"> Mi mamá es mi mamá y yo soy su mamá y mi hija es mi mamá y yo soy su mamá. </marquee>
+                <marquee width="30%" scrollamount="18" direction="down"> Down they go </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+            <div class="marquee-container2">
+
+                <marquee  direction="right" width="15%" scrollamount="10"> Kamikaze </marquee> 
+                <marquee  scrollamount="9" width="60%" scrollamount="16"> I have about five hundred diseases. I've counted them all. </marquee> 
+                <marquee  width="15%" behavior="scroll" direction="right" scrollamount="8"> No Hard Feelings </marquee>
+                <marquee  width="4%" behavior="scroll" direction="left" scrollamount="10"> Kamikaze </marquee>
+                <marquee  width="5%" behavior="scroll" direction="right" scrollamount="24"> Kamikaze </marquee>
+                <marquee  width="30%" behavior="scroll" direction="left" scrollamount="8"> Kamikaze. </marquee>
+            </div>
+
+        </article>
+
+        <script> 
+            function togglePopup(num){
+                document.getElementById(`popup-${num}`).classList.toggle("active"); 
+                }
+            </script>
+</body>
+

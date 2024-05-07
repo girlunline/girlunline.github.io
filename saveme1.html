@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> CLICK HERE PARA SALVARME </title>
+        </head>
+<body>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+        <div class="content">
+        <div class="close-btn" onclick="togglePopup('1')">&times;</div>
+            <h1>TUMMY</h1>
+            <video src="INAPRO.mov" loop autoplay width="1000" height="500" flex </video>
+        </div>
+            </div>
+            
+        <div class="popup" id="popup-2">
+            <div class="overlay"></div>
+        <div class="content">
+        <div class="close-btn" onclick="togglePopup('2')">&times;</div>
+            <h1> tummy </h1> 
+            <video src="INAPRO.mov" loop autoplay flex </video>    
+            
+        </div>
+            </div>
+            
+            <div class="popup" id="popup-3">
+            <div class="overlay"></div>
+        <div class="content">
+        <div class="close-btn" onclick="togglePopup('3')">&times;</div>
+        <h1> tummy </h1> 
+        <video src="INAPRO.mov" loop autoplay flex </video>       
+            
+        </div>
+            </div>
+            
+                <div class="popup" id="popup-4">
+            <div class="overlay"></div>
+        <div class="content">
+        <div class="close-btn" onclick="togglePopup('4')">&times;</div>
+            <h1> I LOVE PIZZA AND I LOVE YOU </h1> 
+            <video src="eatingpizza300.mp4" loop autoplay flex </video>  
+            
+        </div>
+            </div>
+            
+        <div class="popup" id="popup-5">
+            <div class="overlay"></div>
+        <div class="content">
+        <div class="close-btn" onclick="togglePopup('5')">&times;</div>
+            <h2> Fun Fact 5</h2>
+            
+        </div>
+            </div>
+            
+        <div class="popup" id="popup-6">
+            <div class="overlay"></div>
+        <div class="content">
+        <div class="close-btn" onclick="togglePopup('6')">&times;</div>
+            <h2> Fun Fact 6</h2>
+            
+        </div>
+            </div>
+
+        <!---->  
+
+            
+        <div class="btn-container">
+                    <button onclick="window.open('savemeagain.html','_blank','location=yes,height=570,width=520,scrollbars=yes,status=yes')" class="btn btn1">Click</button>
+                    <button onclick="togglePopup('2')" class="btn btn2">Here</button>
+                    <button onclick="togglePopup('3')" class="btn btn3">To</button>
+                <br><br>
+                    <button onclick="togglePopup('4')" class="btn btn4">Save</button>
+                    <button onclick="togglePopup('5')" class="btn btn5">Me</button>
+                    <button onclick="togglePopup('6')" class="btn btn6">Click</button>
+                <br><br>
+                    <button onclick="togglePopup('7')" class="btn btn7">Here</button>
+                    <button onclick="togglePopup('8')" class="btn btn8">Para</button>
+                    <button onclick="togglePopup('9')" class="btn btn9">Salvarme</button>
+                <br><br>
+            </div>
+            <div class="btn-container">
+                <button onclick="togglePopup('10')" class="btn btn10">Click</button>
+                <button onclick="togglePopup('11')" class="btn btn11">Here</button>
+                <button onclick="togglePopup('12')" class="btn btn12">To</button>
+            <br><br>
+                <button onclick="togglePopup('13')" class="btn btn13">Save</button>
+                <button onclick="togglePopup('14')" class="btn btn14">Me</button>
+                <button onclick="togglePopup('15')" class="btn btn15">Click</button>
+            <br><br>
+                <button onclick="togglePopup('16')" class="btn btn16">Here</button>
+                <button onclick="togglePopup('17')" class="btn btn17">Para</button>
+                <button onclick="togglePopup('18')" class="btn btn18">Salvarme</button>
+            <br><br>
+        </div>
+        <div class="btn-container">
+            <button onclick="togglePopup('19')" class="btn btn19">Click</button>
+            <button onclick="togglePopup('20')" class="btn btn20">Here</button>
+            <button onclick="togglePopup('21')" class="btn btn21">To</button>
+        <br><br>
+            <button onclick="togglePopup('22')" class="btn btn22">Save</button>
+            <button onclick="togglePopup('23')" class="btn btn23">Me</button>
+            <button onclick="togglePopup('24')" class="btn btn24">Click</button>
+        <br><br>
+            <button onclick="togglePopup('25')" class="btn btn25">Here</button>
+            <button onclick="togglePopup('26')" class="btn btn26">Para</button>
+            <button onclick="togglePopup('27')" class="btn btn27">Salvarme</button>
+        <br><br>
+        </div>
+        <div class="btn-container">
+            <button onclick="togglePopup('28')" class="btn btn28">Click</button>
+            <button onclick="togglePopup('29')" class="btn btn29">Here</button>
+            <button onclick="togglePopup('30')" class="btn btn30">To</button>
+            <br><br><br><br>
+            </div>
+    </body>        
+    <script> 
+
+        function togglePopup(num){
+            document.getElementById(`popup-${num}`).classList.toggle("active"); 
+            }
+        
+            
+    </script>
+</html>
