@@ -89,12 +89,12 @@ p {
 
 #tooltip {
     background: white;
-    border: 15px solid black;
+    border: 16px solid black;
     border-radius: 70px;
     margin: 0;
     padding: 0;
     height: 50px;
-    width: 150px;
+    width: 170px;
     font-size: 1rem;
     text-align: center;
     font-family: "Jetbrains Mono", monospace;
@@ -102,12 +102,12 @@ p {
 
   #tooltip2 {
     background: white;
-    border: 20px solid black;
+    border: 16px solid black;
     border-radius: 70px;
     margin: 0;
     padding: 0;
     height: 50px;
-    width: 150px;
+    width: 170px;
     font-size: 1rem;
     text-align: center;
     font-family: "Jetbrains Mono", monospace;
@@ -115,12 +115,12 @@ p {
 
   #tooltip3 {
     background: white;
-    border: 20px solid black;
+    border: 16px solid black;
     border-radius: 70px;
     margin: 0;
     padding: 0;
     height: 50px;
-    width: 150px;
+    width: 170px;
     font-size: 1rem;
     text-align: center;
     font-family: "Jetbrains Mono", monospace;
