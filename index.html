@@ -1,102 +1,185 @@
 <!DOCTYPE html>
-<!-- saved from url=(0043)http://127.0.0.1:5500/MACHINA/prop_022.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PÁGINA WEB</title>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>w e l c o m e...</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+<link href="https://db.onlinewebfonts.com/c/736cf5b08b01082a3645e14038868e20?family=Krungthep" rel="stylesheet">
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+<script>
+     function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+
+  function showTooltip(evt, text) {
+  let tooltip = document.getElementById("tooltip");
+  tooltip.innerHTML = text;
+  tooltip.style.display = "block";
+  tooltip.style.left = evt.pageX + 10 + 'px';
+  tooltip.style.top = evt.pageY + 10 + 'px';
+}
+
+function hideTooltip() {
+  var tooltip = document.getElementById("tooltip");
+  tooltip.style.display = "none";
+}
+
+// 2
+
+function showTooltip(evt, text) {
+  let tooltip = document.getElementById("tooltip2");
+  tooltip.innerHTML = text;
+  tooltip.style.display = "block";
+  tooltip.style.left = evt.pageX + 10 + 'px';
+  tooltip.style.top = evt.pageY + 10 + 'px';
+}
+
+function hideTooltip() {
+  var tooltip = document.getElementById("tooltip2");
+  tooltip.style.display = "none";
+}
+
+function showTooltip(evt, text) {
+  let tooltip = document.getElementById("tooltip3");
+  tooltip.innerHTML = text;
+  tooltip.style.display = "block";
+  tooltip.style.left = evt.pageX + 10 + 'px';
+  tooltip.style.top = evt.pageY + 10 + 'px';
+}
+
+function hideTooltip() {
+  var tooltip = document.getElementById("tooltip3");
+  tooltip.style.display = "none";
+}
+</script>
 </head>
-<style>
-
-* {
-    animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-}
-    h1 {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        text-align: center;
-        color: fuchsia;
-        font-size: 16rem;
-    }
-
-    p {
-        text-align: center;
-        font-size: 6em;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    a {
-        text-decoration: none;
-        cursor: pointer;
-        color: inherit;
-    }
-
-    .h12 {
-        text-align: left;
-    }
-
-    .h13 {
-        text-align: right;
-    }
-
-    .h14 {
-        text-align: center;
-    }
-
-    .h15 {
-        text-align: 40%;
-    }
-
-    .special {
-  opacity: 0.6;
-  cursor: not-allowed;
-  font-size: 4rem;
-text-align: center;
-  display: inline-flex;
-  position: relative;
-  align-items: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 300;
-}
-   
-    @keyframes example {
-  0%   {background-color:red;}
-  25%  {background-color:yellow;}
-  50%  {background-color:rgb(0, 238, 255);}
-  75%  {background-color:rgb(0, 255, 0);}
-100% {background-color:red; left:0px; top:0px;}
-}
 
 
-</style>
+<div id="tooltip" display="none" style="position: absolute; display: none;"></div>
+<div id="tooltip2" display="none" style="position: absolute; display: none;"></div>
+<div id="tooltip3" display="none" style="position: absolute; display: none;"></div>
 
-<body>
-    <h1> <a href='videoforagain.html'> PÁGINA WEB </a></h1>
-<div>
-    <h1 class="h14"><a href='videoforagain.html'> PÁGINA WEB</a></h1>
-    <h1 class="h14">PÁ<a href='videoforagain.html'>G</a>INA WEB</h1>
-    <h1 class="h14"> P<a href='videoforagain.html'>Á</a>GINA WEB</h1>
-    <h1 class="h14">PÁ<a href='videoforagain.html'>G</a>INA WEB</h1>
-    <h1 class="h14"> P<a href='videoforagain.html'>Á</a>GINA WEB</h1>
-    <h1 class="h14">PÁ<a href='videoforagain.html'>G</a>INA WEB</h1>
-    <h1 class="h14"> P<a href='videoforagain.html'>Á</a>GINA WEB</h1>
-    <h1 class="h14">PÁ<a href='videoforagain.html'>G</a>INA WEB</h1>
-</div>
+    <div class="pixelgirl1"> 
+        <svg width="1000" height="1000" viewBox="0 0 243 381" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="pixelgirl">
     
-<div>
-    <h1 class="h14"> <a href='videoforagain.html'></a>PÁGINA WEB</h1>
-    <h1 class="h15">PÁ<a href='videoforagain.html'>G</a>INA WEB</h1>
-    <h1 class="h14"> <a href='videoforagain.html'>PÁGINA WEB</a></h1>
-    <h1 class="h15"><a href='videoforagain.html'>PÁGINA WEB</a></h1>
-    <h1 class="h14"><a href='videoforagain.html'></a>PÁGINA WEB</h1>
-    <h1 class="h15"><a href='videoforagain.html'>PÁGINA WEB</a></h1>
-    <h1 class="h14"><a href='videoforagain.html'>PÁGINA WEB</a></h1>
-    <h1 class="h15"><a href='videoforagain.html'>PÁGINA WEB</a></h1>
-</div>
+            
+            <g  id="GSCORE1">
+            <a href="https://www.girlunline.com" class="GSCORE1"><rect  id="Rectangle 114" width="81" height="27" transform="matrix(-1 0 0 1 162 151)" fill="black"></rect></a>
+            </g>
+            
+              
+
+            <a href="https://www.girlunline.com" class="GSCORE2">
+            <g id="GSCORE2">
+            <rect id="Rectangle 71" width="27" height="54" transform="matrix(-1 0 0 1 81 178)" fill="black"/>
+            </g>
+            </a>
+
+            <a href="https://www.girlunline.com" class="GSCORE3">
+            <g id="GSCORE3">
+            <rect id="Rectangle 59" width="27" height="54" transform="matrix(-1 0 0 1 54 232)" fill="black"/>
+            </g>
+            </a>
+
+            <a href="https://www.girlunline.com" class="GSCORE4">
+            <g id="GSCORE4">
+            <rect id="Rectangle 65" width="27" height="68" transform="matrix(-1 0 0 1 27 286)" fill="black"/>
+            </g>
+            </a>
+
+            <a href="https://www.girlunline.com" class="GSCORE5">
+            <g id="GSCORE5">
+            <path id="Vector 3" d="M27 354V327H216V354H176V381H149V354H91V381H64V354H27Z" fill="black"/>
+            </g>
+            </a>
+
+            <a href="https://www.instagram.com/girlunline" class="GSCORE6">
+            <g id="GSCORE6">
+            <rect id="Rectangle 179" width="27" height="68" transform="matrix(-1 0 0 1 243 286)" fill="black" onmousemove="showTooltip(evt, 'instagram');" onmouseout="hideTooltip();"/>
+            </g>
+            </a> 
+    
+           
+            <g id="GSCORE7">
+            <a href="https://www.are.na/isabelle-rosacue/channels" class="GSCORE7">
+                <rect id="Rectangle 75" width="27" height="54" transform="matrix(-1 0 0 1 216 232)" fill="black" onmousemove="showTooltip(evt, 'are*na');" onmouseout="hideTooltip();"/>
+            </a>
+            </g>
+        
+            <a href="https://www.girlunline.com" class="GSCORE8">
+            <g id="GSCORE8">
+            <rect id="Rectangle 73" width="27" height="54" transform="matrix(-1 0 0 1 189 178)" fill="black"/>
+            </g>
+            </a>
+    
+            <a href="https://www.girlunline.com" class="GSCORE9">
+            <g  id="GSCORE9">
+            <g id="Vector">
+            <path  id="Vector 1" d="M13.5 161V135.5H26V108.5H53.5V135.5H41V161H13.5Z" fill="black" />
+            </g>
+            <path id="Vector 2" d="M227 162H200V135H188V108H215V135H227V162Z" fill="black" />
+            </g>
+            </a>
+
+            <a href="https://www.girlunline.com" class="GSCORE10">
+            <g id="GSCORE10">
+            <rect id="Rectangle 100" width="81" height="27" transform="matrix(-1 0 0 1 162 108)" fill="black"/>
+            </g>
+            </a>
+    
+            <a href="https://www.girlunline.com" class="GSCORE11">
+            <g  id="GSCORE11">
+            <rect id="Rectangle 108" width="27" height="81" transform="matrix(-1 0 0 1 189 27)" fill="black"/>
+            </g>
+            </a>
+
+            <a href="https://www.girlunline.com" class="GSCORE12">
+            <g  id="GSCORE12">
+            <rect  id="Rectangle 112" width="81" height="27" transform="matrix(-1 0 0 1 162 0)" fill="black"/>
+            </g>
+            </a>
+    
+            <a href="https://www.girlunline.com" class="GSCORE13">
+            <g  id="GSCORE13">
+            <rect  id="Rectangle 103" width="27" height="81" transform="matrix(-1 0 0 1 81 27)" fill="black"/>
+            </g>
+            </a>
+
+            <a href="https://www.girlunline.com" class="HFILL">
+            <g  id="HFILL">
+            <rect width="81" height="81" transform="matrix(-1 0 0 1 162 27)" fill="white"/>
+            <rect width="81" height="81" transform="matrix(-1 0 0 1 162 27)" fill="white"/>
+            </g>
+            </a>
+
+            
+            <g id="DFILL">
+                <a href="https://www.girlunline.com" class="DFILL">
+                    <path id="Vector 4" d="M27 286V327H216V286H189V232H162V178H81V232H54V286H27Z" fill="white" onmousemove="showTooltip(evt, 'latest');" onmouseout="hideTooltip();"/>
+                    </a>
+            </g>
+    
+            </g>
+            </svg>
+    </div>
+
+   
 
 
-
-
+     
+        
 </body>
-
+</html>

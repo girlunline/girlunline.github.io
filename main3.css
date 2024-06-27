@@ -1,0 +1,19 @@
+* {
+    font-family: "Krungthep";
+    padding: 2;
+    background-color: azure;
+}
+
+
+.grid-even-columns {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.flow {
+    border: 5px solid black;
+    border-radius: 20%;
+}

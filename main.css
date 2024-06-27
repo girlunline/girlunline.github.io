@@ -1,0 +1,296 @@
+* {
+    background-color: #FF3399;
+    margin: 0;
+    padding: 0;
+    font-family:"Jetbrains Mono", monospace;
+}
+
+
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 200px;
+    color:#CC0066;
+    letter-spacing: 200px;
+}
+
+
+p {
+    font-size: 42pt;
+}
+
+
+.gsound1a {
+    background-color: transparent;
+    position: absolute;
+    color: #CC0066;
+    letter-spacing: 500px;
+    font-size: 280px;
+    display: inline;
+    text-align: center;
+    z-index: 2;
+    font-family: "Krungthep";
+}
+
+.gsound1b {
+    background-color: transparent;
+    position: absolute;
+    color: #F22E8A;
+    letter-spacing: 500px;
+    font-size: 120px;
+    display: inline;
+    text-align: center;
+    z-index: 2;
+    font-family: "Krungthep";
+}
+
+.gsound1c {
+    position: absolute;
+    background-color: transparent;
+    color: #E66573;
+    letter-spacing: 500px;
+    font-size: 200px;
+    display: inline;
+    text-align: center;
+    z-index: 1;
+    font-family: "Krungthep";
+}
+
+.gblogscroll p {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: right;
+    border:  9px solid pink;
+    margin: 0;
+    width: 900px;
+    border-radius: 70px;
+    padding: 0;
+    background-color: #CC0066;
+    color: pink;
+    max-height: 1000px;
+    overflow-y: scroll;
+}
+
+.pixelgirl1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#tooltip {
+    background: white;
+    border: 15px solid black;
+    border-radius: 70px;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    width: 200px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Jetbrains Mono", monospace;
+  }
+
+  #tooltip2 {
+    background: white;
+    border: 20px solid black;
+    border-radius: 70px;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    width: 200px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Jetbrains Mono", monospace;
+  }
+
+  #tooltip3 {
+    background: white;
+    border: 20px solid black;
+    border-radius: 70px;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    width: 270px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Jetbrains Mono", monospace;
+  }
+
+
+/* 1 */
+
+.GSCORE1 rect:hover {
+    fill:#FF0000
+}
+
+
+/* 2 */
+
+.GSCORE2 rect:hover {
+    fill:#FF0000
+}
+
+
+/* 3 */
+
+.GSCORE3 rect:hover {
+    fill:#FF0000;
+}
+
+
+/* 4 */
+
+.GSCORE4 rect:hover {
+    fill:#FF0000
+}
+
+
+/* 5 */
+
+.GSCORE5 path:hover {
+    fill: #FF0000;
+}
+
+/* 6 */
+
+.GSCORE6 rect:hover{
+    display:block;
+    fill: #FF0000;
+}
+
+
+
+  /* 7 */
+
+.GSCORE7 rect:hover {
+    fill:#FF0000
+}
+
+
+/* 8 */
+
+.GSCORE8 rect:hover {
+    fill:#FF0000
+}
+
+
+/* 9 */
+
+.GSCORE9 path:hover {
+    fill:#FFCEFA;
+}
+
+
+/* 10 */
+
+.GSCORE10 rect:hover {
+    fill:#FF0000;
+}
+
+
+/* 11 */
+
+.GSCORE11 rect:hover {
+    fill:#FF0000;
+}
+
+
+
+/* 12 */
+
+.GSCORE12 rect:hover {
+    fill:#FF0000;
+}
+
+
+
+/* 13 */
+
+.GSCORE13 rect:hover {
+    fill:#FF0000;
+}
+
+
+
+/* hfill */
+
+.HFILL rect:hover {
+    fill:#FFCEFA;
+}
+
+
+
+/* dfill */
+
+.DFILL path:hover {
+    -webkit-animation: portal 1s infinite;
+    animation: portal 1s infinite;
+    -moz-animation: portal 1s infinite;
+    -o-animation: portal 1s infinite;
+}
+
+@keyframes portal {
+    0% {
+        fill:yellow
+     }
+     25% {
+        fill:#5100ff
+     }
+     50% {
+        fill:aqua
+     }
+     75% {
+        fill: #b700ff
+     }
+     100% {
+        fill: greenyellow;
+     }
+}
+
+  
+  .GSCORE1 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+  }
+  
+
+nav {
+    position: absolute;
+    top:-11px;
+}
+
+ul {
+    position: relative;
+}
+nav li {
+    display:inline;
+}
+nav a {
+    display:inline-block;
+    visibility: hidden;
+    padding-right:5px;
+    text-decoration:none;
+    font-family: "Jetbrains Mono", monospace;
+    color: black;
+}

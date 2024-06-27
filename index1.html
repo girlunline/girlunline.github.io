@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w e l c o m e</title>
+    <link rel="icon" href="/33E.gif" type="image/x-icon" >
+    <link rel="shortcut icon" href="/33E.gif" type="image/x-icon" >
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main2.css" class="rel">
+    <script>
+        function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+
+function StopSound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+
+function showTooltip(evt, text) {
+  let tooltip = document.getElementById("tooltip");
+  tooltip.innerHTML = text;
+  tooltip.style.display = "block";
+  tooltip.style.left = evt.pageX + 10 + 'px';
+  tooltip.style.top = evt.pageY + 10 + 'px';
+}
+
+function hideTooltip() {
+  var tooltip = document.getElementById("tooltip");
+  tooltip.style.display = "none";
+}
+
+// 2
+
+function showTooltip2(evt, text) {
+  let tooltip = document.getElementById("tooltip2");
+  tooltip.innerHTML = text;
+  tooltip.style.display = "block";
+  tooltip.style.left = evt.pageX + 10 + 'px';
+  tooltip.style.top = evt.pageY + 10 + 'px';
+}
+
+function hideTooltip2() {
+  var tooltip = document.getElementById("tooltip2");
+  tooltip.style.display = "none";
+}
+    </script>
+</head>
+
+<style>
+
+* {
+    background-color: aliceblue;
+}
+    a {
+        font-size: 16rem;
+        color: #FF8A00;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+
+    p {
+    text-decoration: none;
+    cursor: pointer;
+    color: fuchsia;
+}
+
+a:hover, a:focus {
+    color: #FFBB6C;
+}
+
+a:active {
+    color: red;
+}
+
+UL { 
+        background: yellow; 
+        margin: 12px 12px 12px 12px;
+        padding: 3px 3px 3px 3px;
+                                     /* No borders set */
+      }
+      LI { 
+        color: white;                /* text color is white */ 
+        background: blue;            /* Content, padding will be blue */
+        margin: 12px 12px 12px 12px;
+        padding: 12px 0px 12px 12px; /* Note 0px padding right */
+        list-style: none             /* no glyphs before a list item */
+                                     /* No borders set */
+      }
+      LI.withborder {
+        border-style: dashed;
+        border-width: medium;        /* sets border width on all sides */
+        border-color: lime;
+      }
+
+</style>
+<body>
+    <UL>
+        <LI>First element of list
+        <LI class="withborder">This is my blog. 
+      </UL>
+
+    <div id="tooltip" display="none" style="position: absolute; display: none;"></div>
+
+    <svg>
+      <a href="https://google.com"><rect width="500" height="500"  onmousemove="showTooltip(evt, 'instagram');" onmouseout="hideTooltip();" >
+      </rect></a>
+    </svg>
+
+    <svg>
+        <a href="https://google.com"><rect width="500" height="500"  onmousemove="showTooltip(evt, 'arena');" onmouseout="hideTooltip();" >
+        </rect></a>
+      </svg>
+
+<a href="https://www.girlunline.com" onmouseover="PlaySound('mySound')" 
+    onmouseout="StopSound('mySound')"> >>> </a>
+
+<audio id='mySound' src='http://upload.wikimedia.org/wikipedia/commons/6/6f/Cello_Live_Performance_John_Michel_Tchaikovsky_Violin_Concerto_3rd_MVT_applaused_cut.ogg'/>
+
+</body>
+
+</html>
