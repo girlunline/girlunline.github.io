@@ -1,0 +1,30 @@
+* {
+    font-weight: 100;
+    margin: 0;
+
+    background-color: rgb(255, 0, 179);
+    font-family: "JetBrains Mono", monospace;
+}
+
+body {
+min-height: 100vh;
+overflow-x: hidden;
+}
+
+.container-1 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(150px,150px));
+
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
