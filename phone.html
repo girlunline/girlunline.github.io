@@ -4,10 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/phonestyle.css">
-    <title>Document</title>
+    <title>✿༺ ωιη∂σω ѕнσρριηg ༻✿ </title>
+    <link rel="shortcut icon" href="/phone_5.png" type="image/x-icon" >
 </head>
 
-<script>
+<style type="text/css">
+    
+    
+    body
+    
+       {
+       margin: 0;
+       overflow: hidden;
+       background-color: white;
+       }
+      
+       .overlay{
+  position: inherit;
+  width: 75%;
+  height: 100vh;
+}
+      
+    
+    </style>
+
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-11087288-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+
+
     function PlaySound(soundobj) {
   var thissound = document.getElementById(soundobj);
   thissound.play();
@@ -18,17 +49,29 @@ function StopSound(soundobj) {
   thissound.pause();
   thissound.currentTime = 0;
 }
+
+var newwindow;
+
+function popit(url){
+  newwindow = window.open(
+      url, '', "status=yes, height=500; width=500; resizeable=0");
+}
+
 </script>
 
 <body>
 
-<div class="container" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"">
-<img src="/phone_1.png" alt="" id="img1">
-<img src="/phone_3.png" alt="" id="img2">
+<div onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')""  class="container">
+<img src="/phone_5.png" alt="" id="img1">
+<a onclick="javascript:popit('start.html');"> <img src="/phone_6.png" alt="" id="img2"> </a>
 
-<audio id='mySound' src='text-to-speech.mp3' />
+
+
+<audio id='mySound' src='text-to-speech2.mp3'/>
 
 </div>
+
+
 </body>
 
 </body>
