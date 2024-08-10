@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(mybeautifulcollage.png);
+    background-repeat: repeat;
+  background-size: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.container img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.003s linear;
+}
+
+.container #img2:hover {
+  opacity:0;
+  cursor: pointer;
+}
+
