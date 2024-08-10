@@ -7,13 +7,26 @@
     <title>Document</title>
 </head>
 
-</head>
+<script>
+    function PlaySound(soundobj) {
+  var thissound = document.getElementById(soundobj);
+  thissound.play();
+}
+
+function StopSound(soundobj) {
+  var thissound = document.getElementById(soundobj);
+  thissound.pause();
+  thissound.currentTime = 0;
+}
+</script>
 
 <body>
 
-<div class="container">
-<img src="/phone_3.png" alt="" id="img1">
-<img src="/phone_1.png" alt="" id="img2">
+<div class="container" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"">
+<img src="/phone_1.png" alt="" id="img1">
+<img src="/phone_3.png" alt="" id="img2">
+
+<audio id='mySound' src='text-to-speech.mp3' />
 
 </div>
 </body>
