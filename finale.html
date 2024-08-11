@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PANTS! SKIRTS! SHORTS! </title>
+    <link rel='stylesheet' type='text/css' media='screen' href='start.css'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<STYLE>
+.welcome {
+    height: 400px;
+    width: 620px;
+    cursor: pointer;
+}
+</STYLE>
+
+<body>
+  <script>
+
+function PlaySound(soundobj) {
+  var thissound = document.getElementById(soundobj);
+  thissound.play();
+}
+
+function StopSound(soundobj) {
+  var thissound = document.getElementById(soundobj);
+  thissound.pause();
+  thissound.currentTime = 0;
+}
+
+var newwindow;
+
+function popit(url){
+  newwindow = window.open(
+      url, '', "status=yes, height=450; scrollbars=no; screenX=500; screenY=-500; width=620; resizeable=0");
+}
+
+    
+
+ </script>
+ <div onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')""  class="welcome">
+    <a onclick="javascript:popit('phone.html');"><img class="welcome" src="finale.png"></a>
+    <audio id='mySound' src='text-to-speech7.mp3'/>
+</div>
+
+</body>
+
+
+</html>
