@@ -13,6 +13,10 @@
     width: 600px;
     cursor: pointer;
 }
+    * {
+    overflow-x: hidden;
+  overflow-y: auto;
+    }
 </STYLE>
 
 <body>
@@ -22,7 +26,7 @@ var newwindow;
 
 function popit(url){
   newwindow = window.open(
-      url, '', "status=yes, height=650; scrollbars=no; screenX=500; screenY=200; width=600; resizeable=0");
+      url, '', "status=yes, height=450; scrollbars=no; screenX=500; screenY=200; width=600; resizeable=0");
 }
 
 
