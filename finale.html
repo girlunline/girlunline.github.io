@@ -3,15 +3,19 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>PANTS! SKIRTS! SHORTS! </title>
+    <title> BRING YOUR FILES TO LIFE! </title>
     <link rel='stylesheet' type='text/css' media='screen' href='start.css'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <STYLE>
 .welcome {
-    height: 400px;
-    width: 620px;
+    height: 100%;
+    width: 100%;
     cursor: pointer;
+}
+body {
+    overflow-x: hidden;
+  overflow-y: auto;
 }
 </STYLE>
 
@@ -33,10 +37,10 @@ var newwindow;
 
 function popit(url){
   newwindow = window.open(
-      url, '', "status=yes, height=450; scrollbars=no; screenX=500; screenY=-500; width=620; resizeable=0");
+      url, '', "status=yes, height=450; scrollbars=no; screenX=500; screenY=-500; width=620; resizeable=no");
 }
 
-    
+  
 
  </script>
  <div onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')""  class="welcome">
