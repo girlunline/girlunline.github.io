@@ -130,42 +130,42 @@ p {
 /* 1 */
 
 .GSCORE1 rect:hover {
-    fill:#FF0000
+    fill:#FFCEFA
 }
 
 
 /* 2 */
 
 .GSCORE2 rect:hover {
-    fill:#FF0000
+    fill:#FFCEFA
 }
 
 
 /* 3 */
 
 .GSCORE3 rect:hover {
-    fill:#FF0000;
+    fill:#FFCEFA;
 }
 
 
 /* 4 */
 
 .GSCORE4 rect:hover {
-    fill:#FF0000
+    fill:#FFCEFA
 }
 
 
 /* 5 */
 
 .GSCORE5 path:hover {
-    fill: #FF0000;
+    fill: #FFCEFA;
 }
 
 /* 6 */
 
 .GSCORE6 rect:hover{
     display:block;
-    fill: #FF0000;
+    fill: #FFCEFA;
 }
 
 
@@ -173,14 +173,14 @@ p {
   /* 7 */
 
 .GSCORE7 rect:hover {
-    fill:#FF0000
+    fill:#FFCEFA
 }
 
 
 /* 8 */
 
 .GSCORE8 rect:hover {
-    fill:#FF0000
+    fill:#FFCEFA;
 }
 
 
@@ -194,14 +194,14 @@ p {
 /* 10 */
 
 .GSCORE10 rect:hover {
-    fill:#FF0000;
+    fill:#FFCEFA;
 }
 
 
 /* 11 */
 
 .GSCORE11 rect:hover {
-    fill:#FF0000;
+    fill:#FFCEFA;
 }
 
 
@@ -209,7 +209,7 @@ p {
 /* 12 */
 
 .GSCORE12 rect:hover {
-    fill:#FF0000;
+    fill:#FFCEFA;
 }
 
 
@@ -217,7 +217,7 @@ p {
 /* 13 */
 
 .GSCORE13 rect:hover {
-    fill:#FF0000;
+    fill:#FFCEFA;
 }
 
 
